@@ -6,36 +6,101 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>542</width>
-    <height>267</height>
+    <width>466</width>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>4chan Thread/Image Downloader</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>4chan_logo_hq_by_michaudotcom-d529rdh.png</normaloff>4chan_logo_hq_by_michaudotcom-d529rdh.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="4" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_3"/>
-    </item>
-    <item row="4" column="0">
+    <item row="5" column="0">
      <widget class="QLabel" name="label_3">
       <property name="text">
        <string>Save As:</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+    <item row="0" column="2" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>Nimbus Mono L</family>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>4chan Thread/Image Downloader</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
-    <item row="6" column="1" colspan="2">
+    <item row="7" column="1" colspan="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="3">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item row="6" column="1" colspan="3">
      <widget class="QPushButton" name="pushButton">
       <property name="text">
        <string>Download</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Image URL:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="logo.qrc">:/new/prefix1/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_3"/>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>Clear Fields</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" rowspan="2" colspan="3">
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+    <item row="2" column="0" rowspan="2">
      <widget class="QLabel" name="label">
       <property name="text">
        <string>Thread URL:</string>
@@ -43,44 +108,7 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string>Image URL:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>Cancel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="2">
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit"/>
-    </item>
-    <item row="2" column="1">
      <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="5" column="1">
-     <spacer name="verticalSpacer_2">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -99,7 +127,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>542</width>
+     <width>466</width>
      <height>19</height>
     </rect>
    </property>
@@ -115,6 +143,8 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
  <connections/>
 </ui>

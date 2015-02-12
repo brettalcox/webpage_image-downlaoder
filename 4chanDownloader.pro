@@ -25,3 +25,6 @@ else:unix: LIBS += -L$$PWD/../../../../usr/lib/ -lcurl
 
 INCLUDEPATH += $$PWD/../../../../usr/include
 DEPENDPATH += $$PWD/../../../../usr/include
+
+RESOURCES += \
+    logo.qrc

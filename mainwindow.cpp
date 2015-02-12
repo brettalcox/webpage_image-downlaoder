@@ -66,3 +66,15 @@ void MainWindow::downloadFile(char *url, QString path) {
 
         }
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    MainWindow::close();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    ui->lineEdit->clear();
+    ui->lineEdit_2->clear();
+    ui->lineEdit_3->clear();
+}
